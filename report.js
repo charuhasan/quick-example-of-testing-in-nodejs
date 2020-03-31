@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     jshintXMLReporter = require('gulp-jshint-xml-file-reporter');
  
 gulp.task('lint', function () {
-    return gulp.src('./**/*.js')
+    return gulp.src('**/*/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter(jshintXMLReporter))
         .on('end', jshintXMLReporter.writeFile({
