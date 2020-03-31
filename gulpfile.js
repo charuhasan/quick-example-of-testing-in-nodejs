@@ -6,7 +6,7 @@ var checkstyleFileReporter = require('jshint-checkstyle-file-reporter');
 process.env.JSHINT_CHECKSTYLE_FILE = 'jshint.xml'; // default: checkstyle.xml
 
 gulp.task('jshint', function() {
-	gulp.src('**/*/*.js')
+	gulp.src('*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter(checkstyleFileReporter));
 });
