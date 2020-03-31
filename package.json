@@ -10,7 +10,7 @@
     "test": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "coverage": "istanbul report cobertura --dir output/coverage/jest",
     "standard": "standard --verbose --fix | snazzy",
-    "jshint": "jshint --reporter node_modules/jshint-checkstyle-file-reporter **/*/*.js"
+    "jshint": "jshint --reporter node_modules/jshint-checkstyle-file-reporter *.js"
   },
     "jest": {
     "verbose": true,
